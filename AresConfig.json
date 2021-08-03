@@ -1,0 +1,408 @@
+{
+
+  "app_properties": {
+    "app_name": "ARES ",
+    "app_version": "v1.0.0",       
+    "show_backend_status": "true",
+    "show_reader_status": "true",
+    "show_reader_batt": "true",
+    "app_radea": "radea_backend"
+  },
+
+  "common_properties": {
+    "statusbar_gradient": "#f6f706,0.0,#ffffff,1.1",
+    "statusbar_bg_color": "#00ffffff",
+    "page_gradient": "#a6d1f2,0.1,#258FE0,1.0",
+    "page_bg_color": "#a6d1f2",
+    "app_img_source_base_uri": "",
+    "app_img_source_base_path": "",
+    "left_button_image": "angle_circle_left.png",
+    "lang": "en_us",
+    "barcode_enabled": "true",
+    "imgbut_gradient": "#a6d1f2,0.1,#258FE0,1.0",
+    "imgbut_txt_color": "#ffffff",
+    "imgbut_circle_bg_color": "#ffffff",
+    "imgbut_txt_font_size": "18",
+    "imgbut_txt_font_style": "bold",
+    "imgbut_txt_font_family": "Arial",
+    "imgbut_height": "",
+    "imgbut_width": "95",
+    "imgbut_img_margin": "8",
+    "imgbut_img_top": "true",
+    "imgbut_circle_size": "65",
+    "imgbut_circle_color": "#ffffff",
+    "imgbut_circle_horizontal": "center",
+
+    "barcode_convert_to_crc32": "true",
+    "tag_encoding": "nid_tekso",
+    "product_info_fields": "sku,crc32_sku_seed,description",
+    "rf_q": "0",
+    "rf_rounds": "0",
+    "rf_session": "0"
+
+  },
+
+  "nav_group_properties": [
+    {
+      "group": "main_menu",
+      "statusbar_gradient": "",
+      "statusbar_bg_color": "#00ffffff",
+      "left_button_image": "gear.png",
+      "left_button_target_group": "sys_menu",
+      "brand_image": "controltek.png"      
+    },
+    {
+      "group": "sys_menu",
+      "statusbar_txt_en_us": "SYSTEM",
+      "statusbar_txt_fi_fi": "Järjestelmä",
+      "left_button_image": "angle_circle_left.png",
+      "left_button_target_group": "main_menu",
+      "statusbar_gradient": "",
+      "statusbar_bg_color": "#aa0000",
+      "page_gradient": "",
+      "page_bg_color": "#dddddd"
+    }
+  ],
+
+  "navigation": [
+    {
+      "group": "main_menu",
+      "go_to": "count_menu",
+      "imgbut_img": "ares_count.png",
+      "imgbut_txt_en_us": "Count",
+      "imgbut_txt_fi_fi": "Laske"
+    },
+    {
+      "group": "main_menu",
+      "go_to": "nav_encode",
+      "imgbut_img": "ares_encode.png",
+      "imgbut_txt_en_us": "Encode",
+      "imgbut_txt_fi_fi": "Koodaus"
+    },
+    {
+      "group": "main_menu",
+      "go_to": "identify_page",
+      "imgbut_img": "ares_identify.png",
+      "imgbut_txt_en_us": "Identify",
+      "imgbut_txt_fi_fi": "Tunnista"
+    },
+    {
+      "group": "main_menu",
+      "go_to": "locate_page",
+      "imgbut_img": "https://uxwing.com/wp-content/themes/uxwing/download/01-user_interface/find.png",
+      "imgbut_txt_en_us": "Locate",
+      "imgbut_txt_fi_fi": "Paikanna"
+    },
+    {
+      "group": "main_menu",
+      "go_to": "move_page",
+      "imgbut_img": "ares_move.png",
+      "imgbut_txt_en_us": "Move",
+      "imgbut_txt_fi_fi": "Siirrä"
+    },
+    {
+      "group": "main_menu",
+      "go_to": "destroy_page",
+      "imgbut_img": "ares_destroy.png",
+      "imgbut_txt_en_us": "Destroy",
+      "imgbut_txt_fi_fi": "Tuhoa"
+    },
+    {
+      "group": "main_menu",
+      "go_to": "receive_page",
+      "imgbut_img": "ares_receive.png",
+      "imgbut_txt_en_us": "Receive",
+      "imgbut_txt_fi_fi": "Vastaanota"
+    },
+    {
+      "group": "main_menu",
+      "go_to": "ean_to_tag",
+      "imgbut_img": "ares_print.png",
+      "imgbut_txt_en_us": "Print",
+      "imgbut_txt_fi_fi": "Tulosta"
+    },
+    {
+      "group": "main_menu",
+      "go_to": "shipments_page",
+      "imgbut_img": "ares_shipments.png",
+      "imgbut_txt_en_us": "Shipments",
+      "imgbut_txt_fi_fi": "Lähetykset"
+    },
+    {
+      "group": "main_menu",
+      "go_to": "orphans_page",
+      "imgbut_img": "ares_orphans.png",
+      "imgbut_txt_en_us": "Orphans",
+      "imgbut_txt_fi_fi": "Orvot"
+    },
+    {
+      "group": "main_menu",
+      "go_to": "TBD_page",
+      "imgbut_img": "ares_tbd.png",
+      "imgbut_txt_en_us": "TBD",
+      "imgbut_txt_fi_fi": "TBD"
+    },
+    {
+      "group": "count_menu",
+      "go_to": "fullcount_menu",
+      "imgbut_width": "250",
+      "imgbut_height": "80",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_fullcount.png",
+      "imgbut_txt_en_us": "Full Count",
+      "imgbut_txt_fi_fi": "Laske kaikki"
+    },
+    {
+      "group": "count_menu",
+      "go_to": "partialcount_menu",
+      "imgbut_width": "250",
+      "imgbut_height": "80",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_partialcount.png",
+      "imgbut_txt_en_us": "Partial Count",
+      "imgbut_txt_fi_fi": "Laske osa"
+    },
+    {
+      "group": "fullcount_menu",
+      "go_to": "salesfloor_fullcount",
+      "imgbut_width": "250",
+      "imgbut_height": "80",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_salesfloor.png",
+      "imgbut_txt_en_us": "Sales Floor",
+      "imgbut_txt_fi_fi": "Myynti kerros"
+    },
+    {
+      "group": "fullcount_menu",
+      "go_to": "backstock_fullcount",
+      "imgbut_width": "250",
+      "imgbut_height": "80",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_backstock.png",
+      "imgbut_txt_en_us": "Back Stock",
+      "imgbut_txt_fi_fi": "Taka Varasto"
+    },
+    {
+      "group": "fullcount_menu",
+      "go_to": "receiving_fullcount",
+      "imgbut_width": "250",
+      "imgbut_height": "80",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_receive.png",
+      "imgbut_txt_en_us": "Receive",
+      "imgbut_txt_fi_fi": "Vastaanotto"
+    },
+    {
+      "group": "fullcount_menu",
+      "go_to": "checkout_fullcount",
+      "imgbut_width": "250",
+      "imgbut_height": "80",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_checkout.png",
+      "imgbut_txt_en_us": "Checkout",
+      "imgbut_txt_fi_fi": "Kassa"
+    },
+    {
+      "group": "partialcount_menu",
+      "go_to": "brand_partialcount",
+      "imgbut_width": "250",
+      "imgbut_height": "80",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_brand.png",
+      "imgbut_txt_en_us": "Brand",
+      "imgbut_txt_fi_fi": "Tuotemerkki"
+    },
+    {
+      "group": "partialcount_menu",
+      "go_to": "season_partialcount",
+      "imgbut_width": "250",
+      "imgbut_height": "80",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_season.png",
+      "imgbut_txt_en_us": "Season",
+      "imgbut_txt_fi_fi": "Kausi"
+    },
+    {
+      "group": "partialcount_menu",
+      "go_to": "category_partialcount",
+      "imgbut_width": "250",
+      "imgbut_height": "80",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_category.png",
+      "imgbut_txt_en_us": "Category",
+      "imgbut_txt_fi_fi": "Ryhmä"
+    },
+    {
+      "group": "partialcount_menu",
+      "go_to": "gender_partialcount",
+      "imgbut_width": "250",
+      "imgbut_height": "80",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_gender.png",
+      "imgbut_txt_en_us": "Gender",
+      "imgbut_txt_fi_fi": "Sukupuoli"
+    },
+    {
+      "group": "partialcount_menu",
+      "go_to": "agegroup_partialcount",
+      "imgbut_width": "250",
+      "imgbut_height": "80",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_gender.png",
+      "imgbut_txt_en_us": "Age Group",
+      "imgbut_txt_fi_fi": "Ikäryhmä"
+    },
+    {
+      "group": "user_settings",
+      "go_to": "settings_printers",
+      "imgbut_width": "250",
+      "imgbut_height": "80",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_printer.png",
+      "imgbut_txt_en_us": "Printers",
+      "imgbut_txt_fi_fi": "Tulostimet"
+    },
+    {
+      "group": "user_settings",
+      "go_to": "language",
+      "imgbut_width": "250",
+      "imgbut_img_top": "false",
+      "imgbut_img": "ares_language.png",
+      "imgbut_txt_en_us": "Language",
+      "imgbut_txt_fi_fi": "Kieli"
+    }
+
+  ],
+
+  "usecases": [
+    {
+      "name": "count_full",
+      "type": "uc_inventory",
+      "format": "result|full",
+      "title": "Counting me"
+    },
+    {
+      "name": "count_partial",
+      "type": "uc_inventory",      
+      "format": "result|partial",
+      "title": "Counting you"
+    },
+    {
+      "name": "ean_to_tag",
+      "type": "barcode_to_tag",
+      "format": "result|count_you",
+      "title": "Counting you",
+      "print": "print_sku_to_tag"
+    },
+    {
+      "name": "locate_products",
+      "type": "locate"
+    },
+    {
+      "name": "salesfloor_fullcount",
+      "type": "uc_inventory",
+      "statusbar_bg_color": "#00ff00",
+      "location": "salesfloor",
+      "report": "fullcount_report",
+      "lbl_scanned": "true",
+      "lbl_scanned_txt_en_us": "Scanned",
+      "lbl_scanned_txt_fi_fi": "Luettu",
+      "lbl_unknown": "true",
+      "lbl_unknown_txt_en_us": "Unknown",
+      "lbl_unknown_txt_fi_fi": "Tuntemattomia",
+      "lbl_expected": "true",
+      "lbl_expected_txt_en_us": "Expected",
+      "lbl_expected_txt_fi_fi": "Odotettuja",
+
+      "submit_txt_en_us": "Submit",
+      "submit_txt_fi_fi": "Vahvista",
+      "start_txt_en_us": "Start",
+      "start_txt_fi_fi": "Käynnistä",
+
+      "format": "result|full"
+    },
+    {
+      "name": "backstock_fullcount",
+      "type": "uc_inventory",
+      "statusbar_gradient": "#b1a1b8,0.1,#bbbb83,1.0",
+      "page_bg_color": "#dd0055",
+      "location": "backstock",
+      "format": "result|full"
+    }
+  ],
+
+  "reports": [
+    {
+      "name": "partial_report",
+      "destination": "radea_backend, localfile,debug_udp",
+      "format": "result|partial",
+      "location": "loc_select_from_list,loc_scan_location_code, locname1-locname2-locname_endpoint, loc1-loc2"
+    },
+    {
+      "name": "inv_destination",
+      "destination": "radea_backend",
+      "format": "result|partial",
+      "location": "loc_select_from_list,loc_scan_location_code, locname1-locname2-locname_endpoint, loc1-loc2"
+    }
+  ],
+
+  "destinations": [
+    {
+      "name": "radea_backend",
+      "type": "radea",
+      "dest_username": "primapower.test.reader",
+      "dest_password": "8ABySfRyBbjXZNWFAMFo1g==",
+      "dest_url": "https://demo01.radea.app"
+    },
+    {
+      "name": "localfile",
+      "type": "file",
+      "folderpath": "\\myfiles"
+    },
+    {
+      "name": "debug_udp",
+      "addr": "192.168.1.144:4211"
+    },
+    {
+      "name": "inv_destination",
+      "endpoint": "/invresults/",
+      "tcp_addr": "192.168.1.144:4211",
+      "mqtt_broker": "test.mosquitto.org",
+      "mqtt_password": "hdfks7fy7",
+      "mqtt_topic": "/invresults/",
+      "rest_username": "primapower.test.reader",
+      "rest_password": "8ABySfRyBbjXZNWFAMFo1g==",
+      "rest_url": "https://demo01.radea.app",
+      "folderpath": "\\myfiles"
+    }
+  ],
+
+  "user_settings": [
+    {
+      "target": "rf_sensitivity",
+      "title_fi_fi": "Lukijan herkkyys",
+      "title_en_us": "Reader sensitivity",
+      "type": "int",
+      "min_max_step": "1,100,5",
+      "default": "100"
+    },
+    {
+      "target": "lang",
+      "title_fi_fi": "Kieli",
+      "title_en_us": "Language",
+      "type": "list",
+      "items_visible": "English, Suomi, Spanish",
+      "items_value": "en_us,fi_fi,es_es",
+      "default": "en_us"
+    }
+
+  ],
+
+  "printlabels": [
+    {
+      "name": "print_sku_to_tag",
+      "cmd": [ "^XA", "^FO50,50", "^A0N,65", "^FD<###>", "^FS", "^RFW,H", "^FD<###>", "^FS", "^XZ" ]
+    }
+  ]
+
+}
